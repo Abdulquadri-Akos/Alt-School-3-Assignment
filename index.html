@@ -28,6 +28,10 @@
             <li><a href="#">Help</a></li>
             <li><a href="#">Account</a></li>
           </ul>
+
+          <div class="hamburger">
+            <i class="fa-solid fa-bars"></i>
+          </div>
         </div>
       </section>
 
@@ -38,96 +42,110 @@
             <h1>Checkout</h1>
           </div>
           <div class="subheader">
-            <div class="basis">
-              <div class="number">1</div>
-              <h2>Your Basic Information</h2>
+            <div class="subheader-content">
+              <div class="basis">
+                <div class="number"><p>1</p></div>
+                <h2>Your Basic Information</h2>
+              </div>
+              <form action="#">
+                <div class="input-box-row">
+                  <div class="input-box">
+                    <label for="fname">First Name</label>
+                    <input
+                      type="text"
+                      name="fname"
+                      id="fname"
+                      placeholder="Jane"
+                    />
+                  </div>
+                  <div class="input-box">
+                    <label for="lname">Last Name</label>
+                    <input
+                      type="text"
+                      name="lname"
+                      id="lname"
+                      placeholder="Doe"
+                    />
+                  </div>
+                </div>
+                <div class="input-box">
+                  <label for="email">Email</label>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="janedoe@example.com"
+                  />
+                </div>
+              </form>
             </div>
-            <form action="#">
-              <div class="input-box-row">
-                <div class="input-box">
-                  <label for="fname">First Name</label>
-                  <input
-                    type="text"
-                    name="fname"
-                    id="fname"
-                    placeholder="Jane"
-                  />
-                </div>
-                <div class="input-box">
-                  <label for="lname">Last Name</label>
-                  <input
-                    type="text"
-                    name="lname"
-                    id="lname"
-                    placeholder="Doe"
-                  />
-                </div>
-              </div>
-              <div class="input-box">
-                <label for="email">Email</label>
-                <input
-                  type="email"
-                  name="email"
-                  id="email"
-                  placeholder="janedoe@example.com"
-                />
-              </div>
-            </form>
           </div>
 
           <div class="subheader">
-            <div class="basis">
-              <div class="number">2</div>
-              <h2>Your Payment Information</h2>
-            </div>
-            <form action="#">
-              <div class="input-box">
-                <label for="creditcard">Credit Card</label>
-                <div class="card-details">
-                  <div class="card-number">
-                    <input
-                      class="card-number"
-                      type="text"
-                      name="card-number"
-                      id="card-number"
-                      placeholder="Card Number"
-                    />
-                  </div>
-                  <div class="card-date">
-                    <input
-                      class="card-date"
-                      type="text"
-                      name="card-date"
-                      id="card-date"
-                      placeholder="MM / YY"
-                    />
-                  </div>
-                  <div class="card-cvc">
-                    <input
-                      class="card-cvc"
-                      type="text"
-                      name="card-cvc"
-                      id="card-cvc"
-                      placeholder="CVC"
-                    />
+            <div class="subheader-content">
+              <div class="basis">
+                <div class="number"><p>2</p></div>
+                <h2>Your Payment Information</h2>
+              </div>
+              <form action="#">
+                <div class="input-box">
+                  <label for="creditcard">Credit Card</label>
+                  <div class="card-details">
+                    <div class="card-number">
+                      <input
+                        class="card-number"
+                        type="text"
+                        name="card-number"
+                        id="card-number"
+                        placeholder="Card Number"
+                      />
+                    </div>
+                    <div class="card-date">
+                      <input
+                        class="card-date"
+                        type="text"
+                        name="card-date"
+                        id="card-date"
+                        placeholder="MM / YY"
+                      />
+                    </div>
+                    <div class="card-cvc">
+                      <input
+                        class="card-cvc"
+                        type="text"
+                        name="card-cvc"
+                        id="card-cvc"
+                        placeholder="CVC"
+                      />
+                    </div>
                   </div>
                 </div>
-              </div>
-            </form>
+              </form>
+            </div>
           </div>
           <div class="subheader">
-            <button class="btn">Buy WP Pusher</button>
-            <div class="help">
-              <div>
-                <i class="fa-regular fa-circle-question fa-lg"></i>
+            <!-- <button class="btn">Buy WP Pusher</button> -->
+
+            <div class="subheader-content">
+              <di v class="input-box">
+                <input type="submit" value="Buy WP Pusher" />
               </div>
-              <p>
-                Need any help? <span>Don't hesitate to contact support!</span>
-              </p>
-            </div>
-            <!--Powered by stripe at the end-->
-            <div class="stripe">
-              <img src="assets/powered_by_stripe.svg" alt="" />
+              <div class="help">
+                <div>
+                  <i class="fa-regular fa-circle-question fa-lg"></i>
+                </div>
+                <p>
+                  Need any help?
+                  <span
+                    >Don't hesitate to
+                    <span class="contact">contact</span> support!</span
+                  >
+                </p>
+              </div>
+              <!--Powered by stripe at the end-->
+              <div class="stripe">
+                <img src="assets/powered_by_stripe.svg" alt="" />
+              </div>
             </div>
           </div>
         </div>
@@ -156,9 +174,11 @@
               </div>
 
               <h3>Need <span>20</span> client sites?</h3>
-              <h3>
-                <span>Switch to the <small>Agency</small> plan</span>
-              </h3>
+              <div class="agency_plan">
+                <h3>
+                  <span>Switch to the <small>Agency</small> plan</span>
+                </h3>
+              </div>
             </div>
           </div>
 
